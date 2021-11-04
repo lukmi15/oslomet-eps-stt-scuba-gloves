@@ -1,12 +1,19 @@
+int ANALOG_PIN = A0;
+int val = 0;
+bool led_state = false;
+
 void setup()
 {
 	pinMode(LED_BUILTIN, OUTPUT);
+	Serial.begin(9600);
 }
 
 void loop()
 {
-	digitalWrite(LED_BUILTIN, HIGH);
-	delay(100);
-	digitalWrite(LED_BUILTIN, LOW);
-	delay(1000);
+	val = analogRead(ANALOG_PIN);
+	if (val >= 400)
+		digitalWrite(LED_BUILTIN, HIGH);
+	else
+		digitalWrite(LED_BUILTIN, LOW);
+	delay(200);
 }
