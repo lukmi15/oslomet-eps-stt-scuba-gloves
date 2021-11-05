@@ -1,1 +1,3 @@
-# Arduino Code for Scuba Gloves developed by the "Smart Textiles Team" as part of the European Project Semester at OsloMet
+- Starting mkr1000 use this link : https://www.arduino.cc/en/Guide/MKR1000
+- Install GoProControl in Tools > Manage Librairies 
+- Edit the file Secrets.h with your camera netword name ("flo_Gopro") and password ("Numero44").
