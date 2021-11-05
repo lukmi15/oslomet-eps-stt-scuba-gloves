@@ -1,2 +1,2 @@
-upload: stt.ino Makefile
+upload: src.ino Makefile
 	sudo arduino --board arduino:samd:mkr1000 --upload $<
